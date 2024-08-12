@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Cita Médica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        .form-container h2 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0FCCCF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color:  #0EB9BC;
+        }
+        a{
+            background-color: #A9BFFA ;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Agendar Cita Médica</h2>
+        <form action="submit_cita.php" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre del Paciente</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha de la Cita</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div class="form-group">
+                <label for="hora">Hora de la Cita</label>
+                <input type="time" id="hora" name="hora" required>
+            </div>
+            <div class="form-group">
+                <label for="medico">Médico</label>
+                <select id="medico" name="medico" required>
+                    <option value="">Seleccione un médico</option>
+                    <option value="dr_smith">Dr. Smith</option>
+                    <option value="dra_jones">Dra. Jones</option>
+                    <option value="dr_brown">Dr. Brown</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="motivo">Motivo de la Consulta</label>
+                <textarea id="motivo" name="motivo" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Agendar Cita</button>
+            </div>
+        </form>
+        <br>
+        <center>
+    <a href="index.html">Regresar</a>
+    </center>
+    </div>
+</body>
+</html>

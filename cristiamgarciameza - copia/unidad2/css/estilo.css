@@ -1,0 +1,48 @@
+body{
+	background: #FFFFCC;
+}
+
+h1{
+	color: #EC3022;
+	font-family: Georgia;
+	text-align: center;
+}
+
+h2{
+	font-family: Helvetica;
+	color: #6C06A2;
+	text-align: center;
+}
+
+h3{
+	font-size: 230%;
+	color: blue;
+	font-family:  sans-serif;
+	text-align: center;
+}
+
+a{
+	background-color: #48AADB;
+	color: white;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+table{
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th{
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 7px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+	color: red;
+}

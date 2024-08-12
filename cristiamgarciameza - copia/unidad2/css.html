@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Uso de CSS de Forma Interna</title>
+	<meta charset="utf-8">
+	<style>
+		/*Comentario en CSS */
+		/* Sintaxis CSS:
+		   h1 {color:blue:}
+		   h1 es el selector
+		   color es la propiedad
+		   blue es el valor */
+		 h1{ /*Propiedades de estilo para el sector h1 */
+		 	color: green; /*Color verde*/
+		 	font-family: courier; /*Familia de fuente courier */
+		 	text-align: left; /*Alineaciòn del texto a la izquierda */
+		 	font-style: italic; /*Estilo de fuente italica */
+		 }
+
+		 h2{ /*Propiedades de estilo para el selector h2 */
+           font-family: verdana;
+           color: blue;
+           text-align: right; /*Alineacion del texto a la derecha */
+		 }
+
+		 h3{ /*Propiedades de estilo para el selector h3 */
+           font-family: Arial;
+           color: red;
+           text-align: center; /*Alineacion del texto al centro */
+		 }
+
+		 h4, h6{ /*Propiedades de estilo para los selectores h4 y h6*/
+            font-size: 150%; /*Tamaño de fente 150%*/
+            color: #862B2B;
+            font-family: monospace;
+            text-align: center;
+		 }
+
+		 body{ /*Propiedades de estilo para el selector body */
+            background-color: #EFDCED; /*Color de fondo */  
+		 }
+
+		 a{ /*Propiedades de estilo para el selector a */
+           color: green; /*Color del enlace web*/
+		 }
+
+	</style>
+</head>
+<body>
+	     <h1>Aprendiendo el uso de CSS de Forma Interna</h1>
+	     <h2>CSS= Hojas de Estilo en Cascada</h2>
+	     <h3>Todo el estilo se define en esta pagina web</h3>
+	     <h3>h1= selector, color=propiedad, blue=valor</h3>
+	     <h4>Junio 2020 </h4>
+	     <h6>Imagen reducida de su tamaño original</h6>
+	     <center>
+	     	<img src="img/logo-utc.png" width="30%" height="30%">
+	     	<p></p>
+	     	<a href="index.html">Regresar</a>
+	     </center>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario  de Registro de Biblioteca</title>
+
+</head>
+<body>
+	<br>
+	<center>
+		<h4>Regristro de libros</h4>
+		<form action="" method="get">
+			Nombre del libro:
+			<input type="text" name="nomlibro" required="true" maxlength="30"><br><br>
+			Autor(es):
+			<input type="text" name="autor" required="true" maxlength="100"><br><br>
+			Editorial:
+			<input type="text" name="editorial" required="true" maxlength="30"><br><br>
+			Año:
+			<select name="año" required="true">
+				<option>Selecciona el año</option>
+				<option value="2015">2015</option>
+			    <option value="2016">2016</option>
+			    <option value="2017">2017</option>
+			    <option value="2018">2018</option>
+			    <option value="2019">2019</option>
+			    <option value="2020">2020</option>
+			</select><br><br>
+			Pais:
+			<select name="pais" required="true">
+			<option>Selecciona el pais</option>
+			<option value="México">México</option>
+			<option value="España">España</option>
+			<option value="Cuba">Cuba</option>
+		</select><br><br>
+		Páginas:
+		<input type="number" name="pagina" required="true" ><br><br>
+		Precio:
+		<input type="number" name="precio" required="true" min="$100"><br><br>
+		Edición: 
+		<input type="number" name="edicion" required="true"><br><br>
+		ISBN:
+		<input type="text" name="isbn" pattern="\d{3}-\d{1,5}-\d{1,7}-\d{1,7}-\d{1}" required="true"><br><br>
+		<input type="submit" name="" value="Registrar libro">
+		</form>
+       <br>
+       <a href="index.html">Regresar</a>
+	</center>
+
+</body>
+</html>
+

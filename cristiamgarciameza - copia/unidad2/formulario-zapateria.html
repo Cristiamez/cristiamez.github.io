@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Venta de Zapatos</title>
+</head>
+<body>
+    <br>
+    <center>
+    <h4>Registro de Venta de Zapatos</h4>
+    <form action="" method="get">
+
+        Modelo:
+        <input type="text" name="modelo" required="true" maxlength="50"><br><br>
+
+        Talla:
+        <input type="number" name="talla" min="1" max="10"  required="true"><br><br>
+
+        Color:
+        <select  name="color" required="true">
+            <option value="Negro">Negro</option>
+            <option value="Camel">Camel</option>
+        </select><br><br>
+
+        Precio:
+        <input type="number"  name="precio" min="100" max="1000" step="0.01" required="true"><br><br>
+
+        Cantidad:
+        <input type="number"  name="cantidad" min="1" required="true"><br><br>
+
+        Nombre del Cliente:
+        <input type="text"  name="cliente" required="true" maxlength="50"><br><br>
+
+        Teléfono:
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" required="true"><br><br>
+
+        Dirección:
+        <input type="text" name="direccion" required="true" maxlength="50"><br><br>
+
+        <input type="submit" value="Registrar Venta">
+        <br>
+       <a href="index.html">Regresar</a>
+    </form>
+</body>
+</html>

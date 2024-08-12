@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario  de Registro de Kinder</title>
+
+</head>
+<body>
+	<br>
+	<center>
+		<h4>Regristro de niños al kinder</h4>
+		<form action="" method="get">
+			Nombre del(a) aspirante: 
+			<input type="text" name="nombre_aspirante" required="true" maxlength="50"><br><br>
+			Edad:
+			<input type="number" name="edad" required="True" min="3" max="5"><br><br>
+			Fecha de nacimiento:
+			<input type="date" name="fecha_nac" required="true"><br><br>
+			Nombre del padre:
+			<input type="text" name="nompadre" required="true" maxlength="50"><br><br>
+			Nombre de la madre:
+			<input type="text" name="nommadre" required="true" maxlength="50"><br><br>
+			Domicilio: 
+			<input type="text" name="domicilio" required="true" maxlength="70"><br><br>
+			Teléfono:
+			<input type="tel" name="telefono" required="true" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12"><br><br>
+			Celular: 
+			<input type="tel" name="celular" required="true" pattern="[0-9]{10}" maxlength="10"><br><br>
+			Correo Electronico: 
+		    <input type="email" name="correo" required="true" maxlength="100"><br><br>
+		    Municipio:
+		<select name="municipio" required="true">
+			<option>Selecciona un municipio</option>
+			<option value="Acaponeta">Acaponeta</option>
+			<option value="Ahuacatlán">Ahuacatlán</option>
+			<option value="Amatlán de Cañas">Amatlán de Cañas</option>
+			<option value="Bahía de Banderas">Bahía de Banderas</option>
+			<option value="Compostela">Compostela</option>
+			<option value="Del Nayar">Del Nayar</option>
+			<option value="Huajicori">Huajicori</option>
+			<option value="Ixtlán del Río">Ixtlán del Río</option>
+			<option value="Jala">Jala</option>
+			<option value="La Yesca">La Yesca</option>
+			<option value="Rosamorada">Rosamorada</option>
+			<option value="Ruíz">Ruíz</option>
+			<option value="San Blas">San Blas</option>
+			<option value="San Pedro Lagunillas">San Pedro Lagunillas</option>
+			<option value="Santa María del Oro">Santa María del Oro</option>
+			<option value="Santiago Ixcuintla">Santiago Ixcuintla</option>
+			<option value="Tecuala">Tecuala</option>
+			<option value="Tepic">Tepic</option>
+			<option value="Tuxpan">Tuxpan</option>
+			<option value="Xalisco">Xalisco</option>
+		</select><br><br>
+		<input type="submit" name="" value="Guardar">
+		<input type="reset" name="" value="Borrar">
+       </form>
+       <br>
+       <a href="index.html">Regresar</a>
+	</center>
+
+</body>
+</html>
